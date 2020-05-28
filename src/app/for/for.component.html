@@ -1,0 +1,7 @@
+
+<table class="table table-bordered table-dark">
+    <tr *ngFor="let item of estudiantes">
+        <td>{{item.nombre}}</td>
+        <td [ngClass]="{'bg-success': item.edad == 15}">{{item.edad}}</td>
+    </tr>
+</table>
